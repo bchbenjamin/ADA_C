@@ -14,7 +14,7 @@ void selection(long int arr[],long int n)
     long int i,j,midx;
     for(i=0;i<n-1;i++)
     {
-        midx=1;
+        midx=i;
         for(j=i+1;j<n;j++)
             if(arr[j]<arr[midx])
                 midx=j;
@@ -34,7 +34,7 @@ int main()
 
     while(it++ < 10)
     {
-        long int c[n];
+        long int *c = (long int *)malloc(n * sizeof(long int));
 
         for(long int i=0;i<n;i++)
         {
@@ -54,6 +54,7 @@ int main()
 
         printf("%li,%lims\n",n,(long int)tim3[it-1]);
 
+        free(c);
         n += 10000;
     }
     fclose(fp);
