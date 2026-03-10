@@ -1,0 +1,5 @@
+set title "Selection Sort"
+set xlabel "input"
+set ylabel "time"
+plot "data.txt" with lines
+pause -1
