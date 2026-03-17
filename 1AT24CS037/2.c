@@ -1,3 +1,5 @@
+// 1.	Design and implement Program in C/C++ to sort a given set of n integer elements using Merge sort method and compute its time complexity. Run the program for varied values of n> 5000 and record the time taken to sort. Plot a graph of the time taken versus n. The elements can be read from a file or can be generated using the random number generator.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
